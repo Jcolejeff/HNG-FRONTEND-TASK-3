@@ -1,41 +1,60 @@
 import styled from "styled-components";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+
 const Footer = () => {
 	return (
-		<>
-			<Wrapper className="bottom">
-				<hr />
-				<FooterContainer>
-					<img src="zuri_logo.png" alt="logo" />
-					<p>HNG Internship 9 Frontend Task</p>
-					<img src="I4G.png" alt="I4G logo" />
-				</FooterContainer>
-			</Wrapper>
-		</>
+		<Wrapper>
+			<FooterContainer className="bottom">
+				<article>
+					<img src="/images/footer2.svg" alt="" />
+					<img src="/images/footer1.svg" alt="" />
+					<div>
+						<FaFacebook />
+						<FaInstagram />
+						<FaTwitter />
+					</div>
+				</article>
+				<article>
+					<h3>Community</h3>
+					<ul>
+						<li>Road Map</li>
+						<li>Road Map</li>
+						<li>Road Map</li>
+						<li>Road Map</li>
+					</ul>
+				</article>
+				<article>
+					<h3>Places</h3>
+					<ul>
+						<li>Road Map</li>
+						<li>Road Map</li>
+						<li>Road Map</li>
+						<li>Road Map</li>
+					</ul>
+				</article>
+				<article>
+					<h3>About Us</h3>
+					<ul>
+						<li>Road Map</li>
+						<li>Road Map</li>
+						<li>Road Map</li>
+						<li>Road Map</li>
+					</ul>
+				</article>
+			</FooterContainer>
+			<p>&copy; 2022 Metabnb</p>
+		</Wrapper>
 	);
 };
 
 export default Footer;
 
-const Wrapper = styled.footer``;
-const FooterContainer = styled.div`
-	display: flex;
-	margin-bottom: 2rem;
-	align-items: center;
-	justify-content: space-between;
-	padding-inline-start: 1rem;
-	padding-inline: 6rem;
-
-	img {
-		margin-block-start: 1rem;
-	}
-	p {
-		opacity: 0.9;
-		font-size: 1rem;
-	}
-
-	@media (max-width: 40em) {
-		flex-direction: column;
-		align-items: flex-start;
-		padding-inline-start: 2rem;
+const Wrapper = styled.footer`
+	background-color: black;
+	color: white;
+	padding: 1rem;
+	ul {
+		list-style: none;
 	}
 `;
+const FooterContainer = styled.div``;

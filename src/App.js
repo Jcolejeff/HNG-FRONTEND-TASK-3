@@ -1,7 +1,6 @@
 import { Home, NftPage, ErrorPage } from "./pages";
 import { ScrollToTop } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./index.css";
 const App = () => {
 	return (
 		<Router>

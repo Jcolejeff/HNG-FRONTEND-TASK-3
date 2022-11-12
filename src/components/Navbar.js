@@ -5,11 +5,14 @@ import logo from "../images//logo/logo (2).svg";
 import logo1 from "../images//logo/logo-house.svg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../context";
 
 const Navbar = () => {
 	const [showLinks, setShowLinks] = useState(false);
 	const linksContainerRef = useRef(null);
 	const linksRef = useRef(null);
+	const { openModal } = useGlobalContext();
+
 	const toggleLinks = () => {
 		setShowLinks(!showLinks);
 	};
@@ -45,7 +48,9 @@ const Navbar = () => {
 						})}
 					</ul>
 				</div>
-				<button className="connect-button">Connect wallet</button>
+				<button onClick={openModal} className="connect-button">
+					Connect wallet
+				</button>
 			</div>
 		</Wrapper>
 	);

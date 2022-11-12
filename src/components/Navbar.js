@@ -16,7 +16,7 @@ const Navbar = () => {
 	useEffect(() => {
 		const linksHeight = linksRef.current.getBoundingClientRect().height;
 		if (showLinks) {
-			linksContainerRef.current.style.height = `${linksHeight}px`;
+			linksContainerRef.current.style.height = `10rem`;
 		} else {
 			linksContainerRef.current.style.height = "0px";
 		}
@@ -74,7 +74,7 @@ const Wrapper = styled.nav`
 		transform: rotate(90deg);
 	}
 	.logo {
-		height: 30px;
+		height: 15px;
 	}
 	.links a {
 		color: var(--clr-grey-3);
@@ -97,10 +97,13 @@ const Wrapper = styled.nav`
 		overflow: hidden;
 		transition: var(--transition);
 	}
-	.show-container {
-		height: 10rem;
+	.connect-button {
+		display: none;
 	}
 	@media (min-width: 800px) {
+		.logo {
+			height: 30px;
+		}
 		.nav-center {
 			margin: 0 auto;
 			display: flex;
@@ -131,7 +134,7 @@ const Wrapper = styled.nav`
 		}
 		.connect-button {
 			/* MAJOR */
-
+			display: block;
 			background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 			border-radius: 10px;
 			color: white;

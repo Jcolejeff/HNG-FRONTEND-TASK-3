@@ -1,53 +1,47 @@
-const socialLinks = [
-	"https://github.com/vigneshshettyin",
-	"https://linkedin.com/in/vigneshshettyin",
-	"https://twitter.com/vigneshshettyin",
-	"https://instagram.com/vigneshshettyin",
-	"https://facebook.com/vigneshshettyin",
-];
-const profileData = {
-	userName: "jeffery_Ikwuh",
-	photoLink:
-		"https://res.cloudinary.com/clasikdrip/image/upload/v1666899549/profile_cm1mwr.jpg",
-	slack: "Jefferyenokela",
-};
-
-const linkData = [
+import React from "react";
+import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+export const links = [
 	{
-		id: "twitter",
-		link: "https://twitter.com/jeffery_ikwuh",
-		name: "Twitter Link",
+		id: 1,
+		url: "/",
+		text: "Home",
 	},
 	{
-		id: "btn__zuri",
-		link: "https://training.zuri.team",
-		name: "Zuri Team",
+		id: 2,
+		url: "/about",
+		text: "Place to be",
 	},
 	{
-		id: "books",
-		link: "http://books.zuri.team",
-		name: "Zuri Books",
+		id: 3,
+		url: "/projects",
+		text: "NFTs",
 	},
 	{
-		id: "book__python",
-		link: "https://books.zuri.team/python-for-beginners?ref_id=Jefferyenokela",
-		name: "Python Books",
-	},
-	{
-		id: "pitch",
-		link: "https://background.zuri.team",
-		name: "Background Check For Coders",
-	},
-	{
-		id: "book__design",
-		link: "https://books.zuri.team/design-rules",
-		name: "Design Books",
-	},
-	{
-		id: "contact",
-		link: "/contact",
-		name: "Contact Me",
+		id: 4,
+		url: "/contact",
+		text: "Community",
 	},
 ];
 
-export { socialLinks, profileData, linkData };
+export const social = [
+	{
+		id: 1,
+		url: "https://www.twitter.com",
+		icon: <FaFacebook />,
+	},
+	{
+		id: 2,
+		url: "https://www.twitter.com",
+		icon: <FaTwitter />,
+	},
+	{
+		id: 3,
+		url: "https://www.twitter.com",
+		icon: <FaLinkedin />,
+	},
+	{
+		id: 4,
+		url: "https://www.twitter.com",
+		icon: <FaBehance />,
+	},
+];

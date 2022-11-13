@@ -86,7 +86,7 @@ const Wrapper = styled.nav`
 	.links a {
 		color: var(--clr-grey-3);
 		font-size: 1rem;
-		text-transform: capitalize;
+
 		letter-spacing: var(--spacing);
 		display: block;
 		padding: 0.5rem 1rem;

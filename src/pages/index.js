@@ -1,5 +1,5 @@
 import Home from "./Home";
-import NftPage from "./NFT-PAGE";
+import PlaceToStay from "./PlaceToStay";
 import ErrorPage from "./404";
 
-export { Home, NftPage, ErrorPage };
+export { Home, PlaceToStay, ErrorPage };

@@ -8,8 +8,8 @@ export const links = [
 	},
 	{
 		id: 2,
-		url: "/about",
-		text: "Place to be",
+		url: "/place-to-stay",
+		text: "Place to stay",
 	},
 	{
 		id: 3,

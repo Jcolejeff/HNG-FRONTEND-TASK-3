@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { nftItems } from "../data";
 import Nft from "./Nft-item";
 
-const GridView = () => {
+const Featured = ({ text, nftItems }) => {
 	return (
 		<Wrapper>
-			<h1>Inspiration for your next adventure</h1>
+			<h1>{text}</h1>
 			<div className="items-container">
 				{nftItems.map((product) => {
 					return <Nft key={product.id} {...product} />;
@@ -50,4 +49,4 @@ const Wrapper = styled.section`
 	}
 `;
 
-export default GridView;
+export default Featured;

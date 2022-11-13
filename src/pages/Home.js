@@ -7,15 +7,20 @@ import {
 	Modal,
 } from "../components";
 import styled from "styled-components";
+import { nftItems } from "../data";
+
 const Home = () => {
 	return (
 		<main>
-			<Navbar />
 			<Header />
-			<Featured />
+			<Featured
+				text="Inspiration for your next adventure"
+				nftItems={nftItems}
+			/>
 			<CallToAction />
-			<Footer />
+
 			<Modal />
+			<Footer />
 		</main>
 	);
 };

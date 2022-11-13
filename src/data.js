@@ -117,6 +117,6 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/cta8.png",
+		image: "/images/ct8.png",
 	},
 ];

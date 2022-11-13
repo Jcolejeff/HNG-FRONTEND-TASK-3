@@ -6,6 +6,7 @@ import Featured from "./Featured";
 import CallToAction from "./CallToAction";
 import Nft from "./Nft-item";
 import Modal from "./Modal";
+import Stars from "./Stars";
 export {
 	Footer,
 	Header,
@@ -15,4 +16,5 @@ export {
 	Featured,
 	Modal,
 	Nft,
+	Stars,
 };

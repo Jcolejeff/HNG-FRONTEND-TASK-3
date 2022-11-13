@@ -17,7 +17,7 @@ const GridView = () => {
 };
 
 const Wrapper = styled.section`
-	padding: 1rem;
+	padding-block-end: 3rem;
 
 	img {
 		height: 210px;
@@ -31,12 +31,13 @@ const Wrapper = styled.section`
 		display: grid;
 		gap: 2rem 1.5rem;
 		justify-content: center;
+
 		justify-items: center;
 	}
 
 	@media (min-width: 40rem) {
 		h1 {
-			font-size: 3rem;
+			font-size: 2.7rem;
 		}
 		.items-container {
 			grid-template-columns: repeat(2, 250px);

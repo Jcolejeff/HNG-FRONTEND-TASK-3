@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { AiFillHeart } from "react-icons/ai";
+import Stars from "./Stars";
 const Nft = ({ image, price, location, name, available }) => {
 	return (
 		<Wrapper>
@@ -21,12 +22,14 @@ const Nft = ({ image, price, location, name, available }) => {
 					<h5>{available}</h5>
 				</div>
 			</footer>
+			<Stars />
 		</Wrapper>
 	);
 };
 
 const Wrapper = styled.article`
 	padding: 1rem;
+	padding-block-end: 0.4rem;
 	border-radius: 1rem;
 	border: 1px solid #d7d7d7;
 	position: relative;
@@ -34,11 +37,12 @@ const Wrapper = styled.article`
 		position: absolute;
 		top: 8%;
 		right: 10%;
+		svg {
+			font-size: 1.25rem;
+			color: #d7d7d7;
+		}
 	}
-	svg {
-		font-size: 1.25rem;
-		color: #d7d7d7;
-	}
+
 	.container {
 		position: relative;
 		background: var(--clr-black);
@@ -56,6 +60,7 @@ const Wrapper = styled.article`
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+		margin-block-end: 0.5rem;
 	}
 	footer h5,
 	footer p {

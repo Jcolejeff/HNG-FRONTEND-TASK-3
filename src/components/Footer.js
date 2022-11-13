@@ -21,28 +21,28 @@ const Footer = () => {
 					<article>
 						<ul>
 							<h3>Community</h3>
-							<li>Road Map</li>
-							<li>Road Map</li>
-							<li>Road Map</li>
-							<li>Road Map</li>
+							<li>NFTs</li>
+							<li>Tokens</li>
+							<li>LandLords</li>
+							<li>Discord</li>
 						</ul>
 					</article>
 					<article>
 						<ul>
 							<h3>Places</h3>
-							<li>Road Map</li>
-							<li>Road Map</li>
-							<li>Road Map</li>
-							<li>Road Map</li>
+							<li>Castle</li>
+							<li>Farms</li>
+							<li>Beach</li>
+							<li>Learn More</li>
 						</ul>
 					</article>
 					<article>
 						<ul>
 							<h3>About Us</h3>
 							<li>Road Map</li>
-							<li>Road Map</li>
-							<li>Road Map</li>
-							<li>Road Map</li>
+							<li>Creators</li>
+							<li>Careers</li>
+							<li>Contact Us</li>
 						</ul>
 					</article>
 				</section>
@@ -57,7 +57,9 @@ export default Footer;
 const Wrapper = styled.footer`
 	background-color: black;
 	color: white;
-	padding: 1rem;
+	padding-block-start: 4rem;
+	padding-inline: 4rem;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -70,19 +72,23 @@ const Wrapper = styled.footer`
 const FooterContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	.logo {
-		text-align: center;
 
+	.logo {
 		div {
 			display: flex;
 			justify-content: space-evenly;
 			margin-block: 1rem;
 		}
 	}
-	article {
-	}
+
 	ul {
 		list-style: none;
+
+		li {
+			font-size: 1rem;
+			font-weight: 200;
+			margin-block-start: 1.5rem;
+		}
 	}
 	section {
 		display: grid;
@@ -90,14 +96,24 @@ const FooterContainer = styled.div`
 		grid-column-gap: 4rem;
 	}
 	@media (min-width: 40rem) {
-		display: flex;
+		.logo {
+			.images {
+				margin-block-end: 7rem;
+			}
+			div {
+				display: block;
+				svg {
+					margin-inline-end: 2rem;
+				}
+			}
+		}
 		flex-direction: row;
 		justify-content: space-around;
 		gap: 15rem;
 		section {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
-			grid-column-gap: 15rem;
+			grid-column-gap: 10rem;
 		}
 	}
 `;

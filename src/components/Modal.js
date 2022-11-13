@@ -1,7 +1,9 @@
 import React from "react";
 import { useGlobalContext } from "../context";
 import { FaTimes } from "react-icons/fa";
+import { MdOutlineNavigateNext } from "react-icons/md";
 import styled from "styled-components";
+
 const Modal = () => {
 	const { isModalOpen, closeModal } = useGlobalContext();
 	return (
@@ -12,10 +14,39 @@ const Modal = () => {
 				}`}
 			>
 				<div className="modal-container">
-					<h3>Connect Wallet</h3>
-					<button className="close-modal-btn" onClick={closeModal}>
-						<FaTimes></FaTimes>
-					</button>
+					<div className="header">
+						<h3>Connect Wallet</h3>
+						<button className="close-modal-btn" onClick={closeModal}>
+							<FaTimes></FaTimes>
+						</button>
+					</div>
+
+					<hr />
+					<section>
+						<p>Choose your preferred wallet:</p>
+						<div className="container">
+							<div className="icon">
+								<span>
+									<img src="images/metamask-icon.png" alt="" />
+								</span>
+								<span>
+									<h3>Metamask</h3>
+								</span>
+							</div>
+							<MdOutlineNavigateNext />
+						</div>
+						<div className="container">
+							<div className="icon">
+								<span>
+									<img src="/images/walletconnect-icon.png" alt="" />
+								</span>
+								<span>
+									<h3>WalletConnect</h3>
+								</span>
+							</div>
+							<MdOutlineNavigateNext />
+						</div>
+					</section>
 				</div>
 			</div>
 		</Wrapper>
@@ -44,23 +75,48 @@ const Wrapper = styled.main`
 	}
 	.modal-container {
 		background: var(--clr-white);
-		border-radius: var(--radius);
+		border-radius: 1rem;
 		width: 90vw;
-		height: 30vh;
+
 		max-width: var(--fixed-width);
-		text-align: center;
-		display: grid;
-		place-items: center;
+
 		position: relative;
+		.header {
+			display: flex;
+			padding-inline: 1rem;
+			justify-content: space-between;
+		}
+		section {
+			padding: 1rem;
+			.container {
+				display: flex;
+				align-items: center;
+				padding-inline: 1rem;
+				justify-content: space-between;
+				width: 90%;
+				background: #f8f9fa;
+				/* DTC Mid Gray */
+				margin-block-end: 1rem;
+				border: 1px solid #cfd8dc;
+				border-radius: 12px;
+			}
+			svg {
+				font-size: 2rem;
+			}
+			.icon {
+				display: flex;
+				align-items: center;
+				span {
+					margin-inline-end: 1rem;
+				}
+			}
+		}
 	}
 	.close-modal-btn {
-		position: absolute;
-		top: 1rem;
-		right: 1rem;
 		font-size: 1rem;
 		background: transparent;
 		border-color: transparent;
-		color: var(--clr-red-dark);
+		color: black;
 		cursor: pointer;
 	}
 `;

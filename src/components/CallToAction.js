@@ -13,9 +13,11 @@ const CallToAction = () => {
 				<button>Learn More</button>
 			</section>
 			<section className="images">
-				<img src="/images/hero-img-1.png" alt="" className="image image1" />
-				<img src="/images/hero-img-1.png" alt="" className="image image1" />
-				<img src="/images/hero-img-1.png" alt="" className="image image1" />
+				<img
+					src="/images/CallactionDesktop.png"
+					alt=""
+					className="image image1"
+				/>
 			</section>
 		</Wrapper>
 	);
@@ -23,25 +25,63 @@ const CallToAction = () => {
 
 export default CallToAction;
 const Wrapper = styled.article`
-	min-height: 95vh;
 	background: var(--clr-primary);
 	color: var(--clr-white);
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	padding-block: 3rem;
+
 	.text {
+		text-align: center;
+		p {
+			line-height: 1.5;
+			margin-block: 2rem;
+		}
 		button {
 			color: #a02279;
 			border: none;
+			padding: 1rem;
+			border-radius: 10px;
 		}
 	}
 
 	.images {
-		width: 14rem;
+		width: 17rem;
 		position: relative;
+		margin-inline-start: 2.7rem;
 	}
 	.image {
 		width: 100%;
 		height: auto;
 		object-fit: cover;
-		height: 13rem;
-		border-radius: 1rem;
+	}
+	@media (min-width: 40rem) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		min-height: 90vh;
+		.images {
+			width: 40rem;
+			position: relative;
+			margin-inline-start: 2.7rem;
+		}
+		.text {
+			text-align: start;
+			align-self: center;
+			padding: 8rem;
+			p {
+				line-height: 2;
+				margin-block: 2rem;
+				padding-inline-end: 5rem;
+			}
+			button {
+				color: #a02279;
+				border: none;
+				padding: 1rem;
+				border-radius: 10px;
+			}
+		}
+	}
+	@media (min-width: 1170px) {
 	}
 `;

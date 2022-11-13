@@ -1,43 +1,71 @@
 import React from "react";
 import styled from "styled-components";
+import { AiFillHeart } from "react-icons/ai";
 const Nft = ({ image, price, location, name, available }) => {
 	return (
 		<Wrapper>
-			<div>
-				<img src={image} alt="" />
+			<div className="container">
+				<img src={image} alt={name} />
 			</div>
+			<div className="heart">
+				<AiFillHeart />
+			</div>
+			<footer>
+				<div>
+					<h5>{name}</h5>
+					<h5>{location}</h5>
+				</div>
+				<div>
+					<p>{price}</p>
 
-			<section>
-				<p>{name}</p>
-				<p>{price}</p>
-				<p>{location}</p>
-				<p>{available}</p>
-			</section>
-			<span>44</span>
+					<h5>{available}</h5>
+				</div>
+			</footer>
 		</Wrapper>
 	);
 };
 
-export default Nft;
-const Wrapper = styled.div`
-	width: 13rem;
-
-	img {
-		width: 100%;
-		height: auto;
-		object-fit: cover;
-		height: 13rem;
+const Wrapper = styled.article`
+	padding: 1rem;
+	border-radius: 1rem;
+	border: 1px solid #d7d7d7;
+	position: relative;
+	.heart {
+		position: absolute;
+		top: 8%;
+		right: 10%;
+	}
+	svg {
+		font-size: 1.25rem;
+		color: #d7d7d7;
+	}
+	.container {
+		position: relative;
+		background: var(--clr-black);
 		border-radius: 1rem;
 	}
-	section {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 0rem;
-		font-size: 0.8rem;
+	img {
+		width: 100%;
+		display: block;
+		object-fit: cover;
+		border-radius: 0.8rem;
+		transition: var(--transition);
+	}
 
-		p {
-			margin: 0;
-			margin-block-end: 0.6rem;
-		}
+	footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	footer h5,
+	footer p {
+		margin-bottom: 0;
+		font-weight: 600;
+		font-size: 0.6rem;
+	}
+
+	footer p {
+		margin-inline-start: 2rem;
 	}
 `;
+export default Nft;

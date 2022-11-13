@@ -8,45 +8,34 @@ const Header = () => {
 			<HeaderWrapper>
 				<section className="text">
 					<header>
-						<h1>Rent a Place away from Home in the Metaverse</h1>
+						<h1>
+							Rent a <span className="pink-text"> Place</span> away from{" "}
+							<span className="pink-text">Home</span> in the{" "}
+							<span className="pink-text"> Metaverse</span>
+						</h1>
 					</header>
 					<p>
 						we provide you access to luxury and affordable houses in the
 						metaverse, get a chance to turn your imagination to reality at your
 						comfort zone
 					</p>
-					<div>
+					<div className="input">
 						<input type="text" placeholder="search for location" />
-						<button> search</button>
+						<button> Search</button>
 					</div>
 				</section>
-				<section className="hero-imgs">
+				<section className="hero-img">
 					<img
-						src="/images/hero-img-1.png"
+						src="/images/hero image.png"
 						alt="hero-img"
 						className="img one"
 					/>
-					<img
-						src="/images/hero-img-1.png"
-						alt="hero-img"
-						className="img two"
-					/>
-					<img
-						src="/images/hero-img-1.png"
-						alt="hero-img "
-						className="img three"
-					/>
-					<img
-						src="/images/hero-img-1.png"
-						alt="hero-img"
-						className="img four"
-					/>
 				</section>
 			</HeaderWrapper>
-			<div>
-				<h3>heloo</h3>
-				<h3>heloo</h3>
-				<h3>heloo</h3>
+			<div className="banner">
+				<img src="images/mbToken.svg" alt="" />
+				<img src="images/metamask.svg" alt="" />
+				<img src="images/opensea.svg" alt="" />
 			</div>
 		</Wrapper>
 	);
@@ -54,45 +43,99 @@ const Header = () => {
 export default Header;
 
 const Wrapper = styled.section`
-	div {
-		width: 100%;
+	padding-block: 2rem;
+	.banner {
 		display: flex;
 		justify-content: space-around;
 		background: var(--clr-primary);
 		color: var(--clr-white);
-	}
-`;
-const HeaderWrapper = styled.section`
-	display: flex;
-	margin-block-end: 10rem;
-	.hero-imgs {
-		display: grid;
-		position: relative;
-		grid-template-columns: 1fr 1fr;
-		gap: 0.3rem;
-		.img {
-			width: 11rem;
-			border-radius: 0.7rem;
-		}
-		.one {
-			position: relative;
-			top: 5rem;
-		}
-		.three {
-			position: relative;
-			top: 5rem;
-		}
-	}
-	.text {
-		h1 {
-			font-style: normal;
-			font-weight: 400;
-			font-size: 56px;
-			color: #434343;
+
+		@media (max-width: 40rem) {
+			img {
+				width: 6.5rem;
+			}
 		}
 	}
 `;
 
+const HeaderWrapper = styled.section`
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 80%;
+	margin-inline: auto;
+	.hero-img {
+		margin-block-end: 2rem;
+
+		width: 18rem;
+		img {
+			width: 100%;
+			display: block;
+			object-fit: cover;
+		}
+	}
+
+	.text {
+		width: 90%;
+		h1 {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 2rem;
+			color: #434343;
+		}
+		p {
+			font-weight: 400;
+			line-height: 1.5;
+			font-size: 1.25rem;
+		}
+	}
+	.pink-text {
+		color: #a02279;
+		font-weight: 600;
+	}
+	.input {
+		display: grid;
+		grid-template-columns: 60% 1fr;
+		margin-block: 2rem;
+		input {
+			border-top-left-radius: 0.3rem;
+			border-bottom-left-radius: 0.3rem;
+		}
+		button {
+			background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
+			border: none;
+			color: var(--clr-white);
+			padding: 0.6rem;
+			border-top-right-radius: 0.5rem;
+			border-bottom-right-radius: 0.5rem;
+		}
+	}
+	@media (min-width: 40rem) {
+		grid-template-columns: 1fr 1fr;
+		padding: 2rem;
+
+		.hero-img {
+			width: 30rem;
+			img {
+				width: 100%;
+				display: block;
+				object-fit: cover;
+			}
+		}
+		.text {
+			align-self: center;
+			width: 90%;
+			h1 {
+				font-size: 2.6rem;
+				color: #434343;
+			}
+			p {
+				font-weight: 400;
+				line-height: 2;
+				margin-block: 3rem;
+			}
+		}
+	}
+`;
 const CustomImage = styled(LazyLoadImage)`
 	border-radius: 50%;
 	width: 100px;

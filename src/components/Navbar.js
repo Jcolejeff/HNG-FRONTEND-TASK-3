@@ -10,20 +10,13 @@ import { useGlobalContext } from "../context";
 const Navbar = () => {
 	const [showLinks, setShowLinks] = useState(false);
 	const linksContainerRef = useRef(null);
-	const linksRef = useRef(null);
+
 	const { openModal } = useGlobalContext();
 
 	const toggleLinks = () => {
 		setShowLinks(!showLinks);
 	};
-	useEffect(() => {
-		const linksHeight = linksRef.current.getBoundingClientRect().height;
-		if (showLinks) {
-			linksContainerRef.current.style.height = `10rem`;
-		} else {
-			linksContainerRef.current.style.height = "0px";
-		}
-	}, [showLinks]);
+
 	return (
 		<Wrapper>
 			<div className="nav-center">
@@ -36,8 +29,13 @@ const Navbar = () => {
 						<FaBars />
 					</button>
 				</div>
-				<div className="links-container" ref={linksContainerRef}>
-					<ul className="links" ref={linksRef}>
+				<div
+					className={`${
+						showLinks ? "links-container  show-container" : "links-container"
+					}`}
+					ref={linksContainerRef}
+				>
+					<ul className="links">
 						{links.map((link) => {
 							const { id, url, text } = link;
 							return (
@@ -46,6 +44,9 @@ const Navbar = () => {
 								</Link>
 							);
 						})}
+						<button onClick={openModal} className="mobile">
+							Connect wallet
+						</button>
 					</ul>
 				</div>
 				<button onClick={openModal} className="connect-button">
@@ -59,7 +60,7 @@ const Navbar = () => {
 export default Navbar;
 const Wrapper = styled.nav`
 	background: var(--clr-white);
-	box-shadow: var(--light-shadow);
+
 	.nav-header {
 		display: flex;
 		align-items: center;
@@ -105,6 +106,21 @@ const Wrapper = styled.nav`
 	.connect-button {
 		display: none;
 	}
+	.mobile {
+		display: block;
+		background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+		border-radius: 10px;
+		color: white;
+		padding-inline: 0.5rem;
+		padding-block: 0.5rem;
+		border: none;
+		font-size: 0.8rem;
+		margin-top: 0.5rem;
+		margin-left: 0.6rem;
+	}
+	.show-container {
+		height: 13rem;
+	}
 	@media (min-width: 800px) {
 		.logo {
 			height: 30px;
@@ -136,6 +152,9 @@ const Wrapper = styled.nav`
 		.links a:hover {
 			padding: 0;
 			background: transparent;
+		}
+		.mobile {
+			display: none;
 		}
 		.connect-button {
 			/* MAJOR */

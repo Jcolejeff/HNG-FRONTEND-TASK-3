@@ -1,12 +1,4 @@
-import {
-	Header,
-	Footer,
-	Navbar,
-	Featured,
-	CallToAction,
-	Modal,
-} from "../components";
-import styled from "styled-components";
+import { Header, Footer, Featured, CallToAction } from "../components";
 import { nftItems } from "../data";
 
 const Home = () => {
@@ -19,11 +11,9 @@ const Home = () => {
 			/>
 			<CallToAction />
 
-			<Modal />
 			<Footer />
 		</main>
 	);
 };
 
 export default Home;
-const Wrapper = styled.main``;

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { links } from "../data";
 import logo from "../images//logo/logo (2).svg";
@@ -9,7 +9,6 @@ import { useGlobalContext } from "../context";
 
 const Navbar = () => {
 	const [showLinks, setShowLinks] = useState(false);
-	const linksContainerRef = useRef(null);
 
 	const { openModal } = useGlobalContext();
 
@@ -21,10 +20,12 @@ const Navbar = () => {
 		<Wrapper>
 			<div className="nav-center">
 				<div className="nav-header">
-					<div>
-						<img src={logo1} className="logo" alt="logo" />
-						<img src={logo} className="logo" alt="logo" />
-					</div>
+					<Link to="/">
+						<div>
+							<img src={logo1} className="logo" alt="logo" />
+							<img src={logo} className="logo" alt="logo" />
+						</div>
+					</Link>
 					<button className="nav-toggle" onClick={toggleLinks}>
 						<FaBars />
 					</button>
@@ -33,13 +34,12 @@ const Navbar = () => {
 					className={`${
 						showLinks ? "links-container  show-container" : "links-container"
 					}`}
-					ref={linksContainerRef}
 				>
 					<ul className="links">
 						{links.map((link) => {
 							const { id, url, text } = link;
 							return (
-								<Link to={url} key={id}>
+								<Link to={url} key={id} onClick={toggleLinks}>
 									{text}
 								</Link>
 							);

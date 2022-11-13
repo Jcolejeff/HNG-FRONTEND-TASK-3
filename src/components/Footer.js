@@ -7,7 +7,7 @@ const Footer = () => {
 			<FooterContainer className="bottom">
 				<article className="logo">
 					<div className="images">
-						<img src="/images/meta-white.png" alt="" />
+						<img src="/images/meta-white.png" alt="logo" />
 					</div>
 
 					<div>

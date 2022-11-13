@@ -15,7 +15,7 @@ const CallToAction = () => {
 			<section className="images">
 				<img
 					src="/images/CallactionDesktop.png"
-					alt=""
+					alt="call-to-action"
 					className="image image1"
 				/>
 			</section>

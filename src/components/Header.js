@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Header = () => {
 	return (
@@ -25,17 +23,13 @@ const Header = () => {
 					</div>
 				</section>
 				<section className="hero-img">
-					<img
-						src="/images/hero image.png"
-						alt="hero-img"
-						className="img one"
-					/>
+					<img src="/images/hero image.png" alt="hero-img" />
 				</section>
 			</HeaderWrapper>
 			<div className="banner">
-				<img src="images/mbToken.svg" alt="" />
-				<img src="images/metamask.svg" alt="" />
-				<img src="images/opensea.svg" alt="" />
+				<img src="images/mbToken.svg" alt="icon-mbtoken" />
+				<img src="images/metamask.svg" alt="icon-metamask" />
+				<img src="images/opensea.svg" alt="icon-opensea" />
 			</div>
 		</Wrapper>
 	);
@@ -135,15 +129,4 @@ const HeaderWrapper = styled.section`
 			}
 		}
 	}
-`;
-const CustomImage = styled(LazyLoadImage)`
-	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-	margin: 5px;
-	margin-block-start: 5rem;
-`;
-
-const UserNameText = styled.h4`
-	color: black;
 `;

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Featured, Footer } from "../components";
-import { nftItems } from "../data";
+import { PlaceToBeItems } from "../data";
 const NftPage = () => {
 	return (
 		<Wrapper>
-			<Featured nftItems={nftItems}></Featured>
+			<Featured nftItems={PlaceToBeItems}></Featured>
 			<Footer />
 		</Wrapper>
 	);

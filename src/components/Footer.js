@@ -62,6 +62,14 @@ const Wrapper = styled.footer`
 	flex-direction: column;
 	align-items: center;
 	gap: 2rem;
+
+	@media (min-width: 40rem) {
+		align-items: flex-start;
+	}
+`;
+const FooterContainer = styled.div`
+	display: flex;
+	flex-direction: column;
 	.logo {
 		text-align: center;
 
@@ -76,14 +84,6 @@ const Wrapper = styled.footer`
 	ul {
 		list-style: none;
 	}
-	@media (min-width: 40rem) {
-		align-items: flex-start;
-	}
-`;
-const FooterContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-
 	section {
 		display: grid;
 		grid-template-columns: 1fr 1fr;

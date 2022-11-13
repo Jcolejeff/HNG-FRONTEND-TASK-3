@@ -54,7 +54,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/hero-img-1.png",
+		image: "/images/cta1.png",
 	},
 	{
 		id: 2,
@@ -63,7 +63,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/hero-img-1.png",
+		image: "/images/cta2.png",
 	},
 	{
 		id: 3,
@@ -72,7 +72,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/hero-img-1.png",
+		image: "/images/cta3.png",
 	},
 	{
 		id: 4,
@@ -81,7 +81,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/hero-img-1.png",
+		image: "/images/cta4.png",
 	},
 	{
 		id: 5,
@@ -90,7 +90,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/hero-img-1.png",
+		image: "/images/cta5.png",
 	},
 	{
 		id: 6,
@@ -99,7 +99,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/hero-img-1.png",
+		image: "/images/cta6.png",
 	},
 	{
 		id: 7,
@@ -108,7 +108,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/hero-img-1.png",
+		image: "/images/cta7.png",
 	},
 	{
 		id: 8,
@@ -117,6 +117,6 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/hero-img-1.png",
+		image: "/images/cta8.png",
 	},
 ];

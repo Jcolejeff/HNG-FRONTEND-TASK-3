@@ -60,6 +60,7 @@ const Navbar = () => {
 export default Navbar;
 const Wrapper = styled.nav`
 	background: var(--clr-white);
+	box-shadow: var(--light-shadow);
 
 	.nav-header {
 		display: flex;
@@ -122,6 +123,7 @@ const Wrapper = styled.nav`
 		height: 13rem;
 	}
 	@media (min-width: 800px) {
+		box-shadow: none;
 		.logo {
 			height: 30px;
 		}

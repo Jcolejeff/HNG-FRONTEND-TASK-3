@@ -156,7 +156,7 @@ const Wrapper = styled.nav`
 			padding: 0;
 			background: transparent;
 		}
-		.mobile {
+		.mobile-button {
 			display: none;
 		}
 		.connect-button {

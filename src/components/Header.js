@@ -98,6 +98,7 @@ const HeaderWrapper = styled.section`
 			border-top-left-radius: 0.3rem;
 			border-bottom-left-radius: 0.3rem;
 			padding: 0.4rem;
+			border: 1px solid #a3a3a3;
 		}
 		button {
 			background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
@@ -129,7 +130,8 @@ const HeaderWrapper = styled.section`
 			}
 			p {
 				font-weight: 400;
-				line-height: 2;
+				line-height: 1.5;
+				font-size: 1.3rem;
 				margin-block: 3rem;
 			}
 		}

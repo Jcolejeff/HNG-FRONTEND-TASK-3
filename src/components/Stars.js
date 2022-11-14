@@ -24,10 +24,5 @@ const Wrapper = styled.div`
 		font-size: 0.5rem;
 		margin-right: 0.4rem;
 	}
-	p {
-		margin-left: 0.5rem;
-		margin-bottom: 0;
-	}
-	margin-bottom: 0.5rem;
 `;
 export default Stars;

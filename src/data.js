@@ -1,5 +1,31 @@
 import React from "react";
 import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import cta1 from "./images/cta1.png";
+import cta2 from "./images/cta2.png";
+import cta3 from "./images/cta3.png";
+import cta4 from "./images/cta4.png";
+import cta5 from "./images/cta5.png";
+import cta6 from "./images/cta6.png";
+import cta7 from "./images/cta7.png";
+import cta8 from "./images/ct8.png";
+
+import ptb1 from "./images/ptb1.png";
+import ptb2 from "./images/ptb2.png";
+import ptb3 from "./images/ptb3.png";
+import ptb4 from "./images/ptb4.png";
+import ptb5 from "./images/ptb5.png";
+import ptb6 from "./images/ptb6.png";
+import ptb7 from "./images/ptb7.png";
+import ptb8 from "./images/ptb8.png";
+import ptb9 from "./images/ptb9.png";
+import ptb10 from "./images/ptb10.png";
+import ptb11 from "./images/ptb11.png";
+import ptb12 from "./images/ptb12.png";
+import ptb13 from "./images/ptb13.png";
+import ptb14 from "./images/ptb14.png";
+import ptb15 from "./images/ptb15.png";
+import ptb16 from "./images/ptb16.png";
+
 export const links = [
 	{
 		id: 1,
@@ -54,7 +80,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/cta1.png",
+		image: cta1,
 	},
 	{
 		id: 2,
@@ -63,7 +89,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/cta2.png",
+		image: cta2,
 	},
 	{
 		id: 3,
@@ -72,7 +98,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/cta3.png",
+		image: cta3,
 	},
 	{
 		id: 4,
@@ -81,7 +107,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/cta4.png",
+		image: cta4,
 	},
 	{
 		id: 5,
@@ -90,7 +116,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/cta5.png",
+		image: cta5,
 	},
 	{
 		id: 6,
@@ -99,7 +125,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/cta6.png",
+		image: cta6,
 	},
 	{
 		id: 7,
@@ -108,7 +134,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/cta7.png",
+		image: cta7,
 	},
 	{
 		id: 8,
@@ -117,7 +143,7 @@ export const nftItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ct8.png",
+		image: cta8,
 	},
 ];
 export const PlaceToBeItems = [
@@ -128,7 +154,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb1.png",
+		image: ptb1,
 	},
 	{
 		id: 2,
@@ -137,7 +163,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb2.png",
+		image: ptb2,
 	},
 	{
 		id: 3,
@@ -146,7 +172,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb3.png",
+		image: ptb3,
 	},
 	{
 		id: 4,
@@ -155,7 +181,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb4.png",
+		image: ptb4,
 	},
 	{
 		id: 5,
@@ -164,7 +190,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb5.png",
+		image: ptb5,
 	},
 	{
 		id: 6,
@@ -173,7 +199,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb6.png",
+		image: ptb6,
 	},
 	{
 		id: 7,
@@ -182,7 +208,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb7.png",
+		image: ptb7,
 	},
 	{
 		id: 8,
@@ -191,7 +217,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb8.png",
+		image: ptb8,
 	},
 	{
 		id: 9,
@@ -200,7 +226,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb9.png",
+		image: ptb9,
 	},
 	{
 		id: 10,
@@ -209,7 +235,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb10.png",
+		image: ptb10,
 	},
 	{
 		id: 11,
@@ -218,7 +244,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb11.png",
+		image: ptb11,
 	},
 	{
 		id: 12,
@@ -227,7 +253,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb12.png",
+		image: ptb12,
 	},
 	{
 		id: 13,
@@ -236,7 +262,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb13.png",
+		image: ptb13,
 	},
 	{
 		id: 14,
@@ -245,7 +271,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb14.png",
+		image: ptb14,
 	},
 	{
 		id: 15,
@@ -254,7 +280,7 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb15.png",
+		image: ptb15,
 	},
 	{
 		id: 16,
@@ -263,6 +289,6 @@ export const PlaceToBeItems = [
 		location: "2345km away",
 		available: "available for 2weeks stay",
 		stars: 2,
-		image: "/images/ptb16.png",
+		image: ptb16,
 	},
 ];

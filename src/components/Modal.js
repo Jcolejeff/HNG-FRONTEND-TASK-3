@@ -3,6 +3,8 @@ import { useGlobalContext } from "../context";
 import { FaTimes } from "react-icons/fa";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import styled from "styled-components";
+import metamask from "../images/metamask-icon.png";
+import Walletconnect from "../images/walletconnect-icon.png";
 
 const Modal = () => {
 	const { isModalOpen, closeModal } = useGlobalContext();
@@ -27,7 +29,7 @@ const Modal = () => {
 						<div className="container">
 							<div className="icon">
 								<span>
-									<img src="images/metamask-icon.png" alt="" />
+									<img src={metamask} alt="" />
 								</span>
 								<span>
 									<h3>Metamask</h3>
@@ -38,7 +40,7 @@ const Modal = () => {
 						<div className="container">
 							<div className="icon">
 								<span>
-									<img src="/images/walletconnect-icon.png" alt="" />
+									<img src={Walletconnect} alt="" />
 								</span>
 								<span>
 									<h3>WalletConnect</h3>

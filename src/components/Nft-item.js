@@ -60,17 +60,19 @@ const Wrapper = styled.article`
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
-		margin-block-end: 0.5rem;
 	}
-	footer h5,
-	footer p {
-		margin-bottom: 0;
-		font-weight: 600;
-		font-size: 0.6rem;
+	footer h5 {
+		font-size: 0.65rem;
+		font-weight: 500;
+		margin-block: 0.3rem;
+		margin-block-start: 0.5rem;
 	}
 
 	footer p {
 		margin-inline-start: 2rem;
+		margin-bottom: 0;
+		font-weight: 600;
+		font-size: 0.8rem;
 	}
 `;
 export default Nft;

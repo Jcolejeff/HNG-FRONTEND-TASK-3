@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import heroImage from "../images/hero image.png";
+import mbTonkenImg from "../images/mbToken.svg";
+import openseaImg from "../images/opensea.svg";
+import metamaskImg from "../images/metamask.svg";
 
 const Header = () => {
 	return (
@@ -23,13 +27,13 @@ const Header = () => {
 					</div>
 				</section>
 				<section className="hero-img">
-					<img src="/images/hero image.png" alt="hero-img" />
+					<img src={heroImage} alt="hero-img" />
 				</section>
 			</HeaderWrapper>
 			<div className="banner">
-				<img src="images/mbToken.svg" alt="icon-mbtoken" />
-				<img src="images/metamask.svg" alt="icon-metamask" />
-				<img src="images/opensea.svg" alt="icon-opensea" />
+				<img src={mbTonkenImg} alt="icon-mbtoken" />
+				<img src={metamaskImg} alt="icon-metamask" />
+				<img src={openseaImg} alt="icon-opensea" />
 			</div>
 		</Wrapper>
 	);
@@ -93,6 +97,7 @@ const HeaderWrapper = styled.section`
 		input {
 			border-top-left-radius: 0.3rem;
 			border-bottom-left-radius: 0.3rem;
+			padding: 0.4rem;
 		}
 		button {
 			background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
@@ -126,6 +131,11 @@ const HeaderWrapper = styled.section`
 				font-weight: 400;
 				line-height: 2;
 				margin-block: 3rem;
+			}
+		}
+		.input {
+			input {
+				padding: 1rem;
 			}
 		}
 	}

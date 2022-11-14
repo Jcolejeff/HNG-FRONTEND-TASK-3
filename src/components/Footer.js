@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import Logo from "../images/meta-white.png";
 
 const Footer = () => {
 	return (
@@ -7,7 +8,7 @@ const Footer = () => {
 			<FooterContainer className="bottom">
 				<article className="logo">
 					<div className="images">
-						<img src="/images/meta-white.png" alt="logo" />
+						<img src={Logo} alt="logo" />
 					</div>
 
 					<div>

@@ -57,7 +57,7 @@ const NftPage = () => {
 
 const Wrapper = styled.main`
 	height: 100vh;
-	padding-block: 2rem;
+	padding-block: 4rem;
 	.mobile {
 		display: flex;
 		justify-content: space-around;
@@ -66,6 +66,7 @@ const Wrapper = styled.main`
 		display: none;
 		width: 75%;
 		margin-inline: auto;
+		padding-bottom: 2rem;
 	}
 	.filters {
 		display: grid;

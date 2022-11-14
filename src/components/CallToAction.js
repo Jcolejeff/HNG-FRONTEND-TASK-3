@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import callToactionImg from "../images/CallactionDesktop.png";
 const CallToAction = () => {
 	return (
 		<Wrapper>
@@ -14,7 +15,7 @@ const CallToAction = () => {
 			</section>
 			<section className="images">
 				<img
-					src="/images/CallactionDesktop.png"
+					src={callToactionImg}
 					alt="call-to-action"
 					className="image image1"
 				/>

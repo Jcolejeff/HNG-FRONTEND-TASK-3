@@ -1,6 +1,10 @@
 ### HNG 9 FRONTEND TASK 3
 
-[LIVE](https://hng-task-2-jeff.netlify.app/)
+MetaBnb
+
+#### we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone
+
+[LIVE](https://hng-task-3-jeff.netlify.app/)
 
 #### Project Setup
 

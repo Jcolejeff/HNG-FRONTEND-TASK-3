@@ -122,8 +122,10 @@ const Wrapper = styled.nav`
 	.show-container {
 		height: 13rem;
 	}
+	@media (min-width: 40rem) {
+	}
 
-	@media (min-width: 800px) {
+	@media (min-width: 1010px) {
 		box-shadow: none;
 		.logo {
 			height: 30px;

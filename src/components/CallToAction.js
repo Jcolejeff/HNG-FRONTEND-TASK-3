@@ -60,6 +60,15 @@ const Wrapper = styled.article`
 	@media (min-width: 40rem) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		min-height: 40vh;
+		place-items: center;
+		.images {
+			width: 20rem;
+		}
+	}
+	@media (min-width: 1010px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		min-height: 90vh;
 		.images {
 			width: 40rem;
@@ -82,7 +91,5 @@ const Wrapper = styled.article`
 				border-radius: 10px;
 			}
 		}
-	}
-	@media (min-width: 1170px) {
 	}
 `;

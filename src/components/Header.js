@@ -114,6 +114,20 @@ const HeaderWrapper = styled.section`
 		padding: 2rem;
 
 		.hero-img {
+			width: 20rem;
+			img {
+				width: 100%;
+				display: block;
+				object-fit: cover;
+			}
+		}
+	}
+
+	@media (min-width: 1010px) {
+		grid-template-columns: 1fr 1fr;
+		padding: 2rem;
+
+		.hero-img {
 			width: 30rem;
 			img {
 				width: 100%;

@@ -97,6 +97,15 @@ const FooterContainer = styled.div`
 		grid-column-gap: 4rem;
 	}
 	@media (min-width: 40rem) {
+		flex-direction: row;
+		justify-content: space-around;
+		gap: 5rem;
+	}
+
+	@media (min-width: 1010px) {
+		flex-direction: row;
+		justify-content: space-around;
+		gap: 15rem;
 		.logo {
 			.images {
 				margin-block-end: 7rem;
@@ -108,9 +117,7 @@ const FooterContainer = styled.div`
 				}
 			}
 		}
-		flex-direction: row;
-		justify-content: space-around;
-		gap: 15rem;
+
 		section {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;

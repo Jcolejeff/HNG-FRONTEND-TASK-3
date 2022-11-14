@@ -42,6 +42,7 @@ const Wrapper = styled.section`
 			grid-template-columns: repeat(2, 250px);
 		}
 	}
+
 	@media (min-width: 1170px) {
 		.items-container {
 			grid-template-columns: repeat(4, 250px);

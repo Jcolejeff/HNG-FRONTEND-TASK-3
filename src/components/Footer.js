@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaTwitter } from "react-icons/fa";
+import { ReactComponent as FaFacebook } from "../images/facebook.svg";
+
 import Logo from "../images/meta-white.png";
 
 const Footer = () => {
@@ -65,8 +67,14 @@ const Wrapper = styled.footer`
 	flex-direction: column;
 	align-items: center;
 	gap: 2rem;
-
+	p {
+		font-weight: 300;
+	}
 	@media (min-width: 40rem) {
+		align-items: flex-start;
+		gap: 0rem;
+	}
+	@media (min-width: 992px) {
 		align-items: flex-start;
 	}
 `;
@@ -84,6 +92,7 @@ const FooterContainer = styled.div`
 
 	ul {
 		list-style: none;
+		padding-inline: 1rem;
 
 		li {
 			font-size: 1rem;
@@ -92,14 +101,17 @@ const FooterContainer = styled.div`
 		}
 	}
 	section {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-column-gap: 4rem;
+		display: flex;
 	}
 	@media (min-width: 40rem) {
 		flex-direction: row;
 		justify-content: space-around;
 		gap: 5rem;
+		section {
+			display: flex;
+			grid-template-columns: 1fr;
+			grid-column-gap: 0rem;
+		}
 	}
 
 	@media (min-width: 1010px) {
@@ -121,7 +133,7 @@ const FooterContainer = styled.div`
 		section {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
-			grid-column-gap: 10rem;
+			grid-column-gap: 6rem;
 		}
 	}
 `;

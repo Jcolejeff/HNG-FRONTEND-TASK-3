@@ -18,7 +18,7 @@ const NftPage = () => {
 	const defaultOption = "filter";
 	return (
 		<Wrapper>
-			<div className="Container">
+			<div className="desktop-filters">
 				<div className="filters">
 					<ul className="list">
 						<li>Restaurant</li>
@@ -37,7 +37,7 @@ const NftPage = () => {
 					</div>
 				</div>
 			</div>
-			<section className="mobile">
+			<section className="mobile-filters">
 				<Dropdown
 					options={options}
 					value={defaultOption}
@@ -57,20 +57,21 @@ const NftPage = () => {
 
 const Wrapper = styled.main`
 	height: 100vh;
-	padding-block: 4rem;
-	.mobile {
+	padding-block-end: 4rem;
+	padding-block-start: 2rem;
+	.mobile-filters {
 		display: flex;
 		justify-content: space-around;
 	}
-	.Container {
+	.desktop-filters {
 		display: none;
-		width: 75%;
+		width: 85%;
 		margin-inline: auto;
 		padding-bottom: 2rem;
 	}
 	.filters {
 		display: grid;
-		grid-template-columns: 86% 8rem;
+		grid-template-columns: 85% 8rem;
 	}
 	.list {
 		display: grid;
@@ -81,7 +82,7 @@ const Wrapper = styled.main`
 		display: flex;
 		align-items: center;
 		border-radius: 0.5rem;
-		border: 0.4px solid black;
+		border: 0.4px solid #b4b4b4;
 		cursor: pointer;
 		padding-inline: 0.7rem;
 		padding-block: 0.3rem;
@@ -92,10 +93,10 @@ const Wrapper = styled.main`
 		}
 	}
 	@media (min-width: 1000px) {
-		.Container {
+		.desktop-filters {
 			display: block;
 		}
-		.mobile {
+		.mobile-filters {
 			display: none;
 		}
 	}

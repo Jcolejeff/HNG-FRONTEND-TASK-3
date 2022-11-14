@@ -1,10 +1,10 @@
 import React from "react";
 import { useGlobalContext } from "../context";
-import { FaTimes } from "react-icons/fa";
-import { MdOutlineNavigateNext } from "react-icons/md";
 import styled from "styled-components";
 import metamask from "../images/metamask-icon.png";
 import Walletconnect from "../images/walletconnect-icon.png";
+import { ReactComponent as CloseBtn } from "../images/x.svg";
+import { ReactComponent as Chevron } from "../images/chevron.svg";
 
 const Modal = () => {
 	const { isModalOpen, closeModal } = useGlobalContext();
@@ -19,7 +19,7 @@ const Modal = () => {
 					<div className="header">
 						<h3>Connect Wallet</h3>
 						<button className="close-modal-btn" onClick={closeModal}>
-							<FaTimes></FaTimes>
+							<CloseBtn></CloseBtn>
 						</button>
 					</div>
 
@@ -35,7 +35,7 @@ const Modal = () => {
 									<h3>Metamask</h3>
 								</span>
 							</div>
-							<MdOutlineNavigateNext />
+							<Chevron />
 						</div>
 						<div className="container">
 							<div className="icon">
@@ -46,7 +46,7 @@ const Modal = () => {
 									<h3>WalletConnect</h3>
 								</span>
 							</div>
-							<MdOutlineNavigateNext />
+							<Chevron />
 						</div>
 					</section>
 				</div>

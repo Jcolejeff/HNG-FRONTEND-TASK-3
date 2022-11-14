@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { AiFillHeart } from "react-icons/ai";
 import Stars from "./Stars";
+import { ReactComponent as Heart } from "../images/heart.svg";
 const Nft = ({ image, price, location, name, available }) => {
 	return (
 		<Wrapper>
@@ -9,7 +10,7 @@ const Nft = ({ image, price, location, name, available }) => {
 				<img src={image} alt={name} />
 			</div>
 			<div className="heart">
-				<AiFillHeart />
+				<Heart />
 			</div>
 			<footer>
 				<div>
@@ -38,7 +39,7 @@ const Wrapper = styled.article`
 		top: 8%;
 		right: 10%;
 		svg {
-			font-size: 1.25rem;
+			font-size: 1.1rem;
 			color: #d7d7d7;
 		}
 	}

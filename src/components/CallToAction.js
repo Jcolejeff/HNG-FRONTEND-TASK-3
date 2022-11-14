@@ -60,29 +60,33 @@ const Wrapper = styled.article`
 	@media (min-width: 40rem) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		min-height: 40vh;
+		min-height: 30vh;
+		padding: 2rem;
 		place-items: center;
 		.images {
 			width: 20rem;
+			margin-inline-end: 2rem;
 		}
 	}
 	@media (min-width: 1010px) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		min-height: 90vh;
+
 		.images {
 			width: 40rem;
 			position: relative;
-			margin-inline-start: 2.7rem;
+			justify-self: center;
+			margin-inline-end: 5rem;
 		}
 		.text {
 			text-align: start;
 			align-self: center;
-			padding: 8rem;
+			padding: 6rem;
 			p {
 				line-height: 2;
 				margin-block: 2rem;
-				padding-inline-end: 5rem;
+				padding-inline-end: 1rem;
 			}
 			button {
 				color: #a02279;

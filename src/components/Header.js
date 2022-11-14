@@ -107,6 +107,7 @@ const HeaderWrapper = styled.section`
 			padding: 0.6rem;
 			border-top-right-radius: 0.5rem;
 			border-bottom-right-radius: 0.5rem;
+			font-size: 0.8rem;
 		}
 	}
 	@media (min-width: 40rem) {
@@ -145,13 +146,14 @@ const HeaderWrapper = styled.section`
 			p {
 				font-weight: 400;
 				line-height: 1.5;
-				font-size: 1.3rem;
+				font-size: 1.1rem;
 				margin-block: 3rem;
 			}
 		}
 		.input {
 			input {
-				padding: 1rem;
+				padding-inline: 1rem;
+				padding-block: 0.8rem;
 			}
 		}
 	}

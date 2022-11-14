@@ -60,8 +60,11 @@ const Wrapper = styled.main`
 	padding-block-end: 4rem;
 	padding-block-start: 2rem;
 	.mobile-filters {
-		display: flex;
-		justify-content: space-around;
+		display: grid;
+
+		grid-template-columns: 4fr 1fr;
+		padding-inline: 3rem;
+		grid-column-gap: 1rem;
 	}
 	.desktop-filters {
 		display: none;
@@ -92,7 +95,16 @@ const Wrapper = styled.main`
 			margin-inline-start: 1rem;
 		}
 	}
-	@media (min-width: 1000px) {
+	@media (min-width: 40rem) {
+		.mobile-filters {
+			display: grid;
+
+			grid-template-columns: 3fr 1fr;
+			padding-inline: 10rem;
+			grid-column-gap: 1rem;
+		}
+	}
+	@media (min-width: 1010px) {
 		.desktop-filters {
 			display: block;
 		}

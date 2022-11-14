@@ -77,13 +77,13 @@ const HeaderWrapper = styled.section`
 		h1 {
 			font-style: normal;
 			font-weight: 400;
-			font-size: 2rem;
+			font-size: 1.7rem;
 			color: #434343;
 		}
 		p {
 			font-weight: 400;
 			line-height: 1.5;
-			font-size: 1.25rem;
+			font-size: 1rem;
 		}
 	}
 	.pink-text {

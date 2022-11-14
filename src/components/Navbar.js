@@ -44,7 +44,7 @@ const Navbar = () => {
 								</Link>
 							);
 						})}
-						<button onClick={openModal} className="mobile">
+						<button onClick={openModal} className="mobile-button">
 							Connect wallet
 						</button>
 					</ul>
@@ -107,7 +107,7 @@ const Wrapper = styled.nav`
 	.connect-button {
 		display: none;
 	}
-	.mobile {
+	.mobile-button {
 		display: block;
 		background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 		border-radius: 10px;
@@ -122,6 +122,7 @@ const Wrapper = styled.nav`
 	.show-container {
 		height: 13rem;
 	}
+
 	@media (min-width: 800px) {
 		box-shadow: none;
 		.logo {

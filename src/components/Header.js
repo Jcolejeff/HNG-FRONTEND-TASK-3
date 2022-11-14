@@ -100,6 +100,9 @@ const HeaderWrapper = styled.section`
 			padding: 0.4rem;
 			border: 1px solid #a3a3a3;
 		}
+		input::placeholder {
+			font-size: 0.75rem;
+		}
 		button {
 			background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
 			border: none;

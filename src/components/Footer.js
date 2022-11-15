@@ -60,17 +60,18 @@ export default Footer;
 const Wrapper = styled.footer`
 	background-color: black;
 	color: white;
-	padding-block-start: 4rem;
-	padding-inline: 4rem;
+	padding-block-start: 2rem;
 
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	padding-inline-start: 1rem;
 	gap: 2rem;
 	p {
 		font-weight: 300;
+		text-align: center;
 	}
 	@media (min-width: 40rem) {
+		padding-inline: 4rem;
 		align-items: flex-start;
 		gap: 0rem;
 	}
@@ -102,6 +103,7 @@ const FooterContainer = styled.div`
 	}
 	section {
 		display: flex;
+		flex-direction: column;
 	}
 	@media (min-width: 40rem) {
 		flex-direction: row;
@@ -109,6 +111,7 @@ const FooterContainer = styled.div`
 		gap: 5rem;
 		section {
 			display: flex;
+			flex-direction: row;
 			grid-template-columns: 1fr;
 			grid-column-gap: 0rem;
 		}

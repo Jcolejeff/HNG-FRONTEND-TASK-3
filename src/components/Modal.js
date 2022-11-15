@@ -8,6 +8,7 @@ import { ReactComponent as Chevron } from "../images/chevron.svg";
 
 const Modal = () => {
 	const { isModalOpen, closeModal } = useGlobalContext();
+
 	return (
 		<Wrapper>
 			<div
